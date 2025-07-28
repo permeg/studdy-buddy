@@ -1,0 +1,114 @@
+:root {
+  --teal: #2e4045;
+  --light-blue: #83adb5;
+  --light-purple: #c7bbc9;
+  --dark-purple: #5e3c58;
+  --light-gray: #bfb5b2;
+  --white: hsl(0, 0%, 100%);
+  --black: #000000;
+}
+body {
+  background-color: var(--teal);
+  color: var(--white);
+}
+main {
+  padding-top: 50px;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  color: var(--light-blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+h2 {
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+h3 {
+  color: var(--light-purple);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+button {
+  background-color: #83adb5;
+  color: #2e4045;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  margin: 8px 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+button:hover {
+  background-color: #c7bbc9;
+  color: #2e4045;
+  outline: none;
+}
+.navbar-buttons {
+  display: flex;
+  justify-content: center;
+  gap:12px;
+  margin-bottom: 24px;
+  margin-top: 15px;
+}
+.task-input {
+  background-color: #83adb5;
+  color: #5e3c58;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  margin: 8px 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;    /* Align tasks to the left */
+  border-radius: 2rem;
+  background: var(--dark-purple);
+  padding: 2rem 1.5rem;
+  box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;             /* Center the box under the input/button */
+  width: 100%;                /* Full width of parent (main) */
+  max-width: 340px;           /* Match main's max-width */
+  box-sizing: border-box;     /* Ensure padding does not affect width */
+  margin-top: 20px;          /* Space between input/button and task list */
+  margin-bottom: 20px;       /* Space below the task list */
+  overflow-y: auto;          /* Allow scrolling if tasks overflow */
+  overflow-x: hidden;       /* Hide horizontal overflow */
+  word-wrap: break-word;
+  white-space: normal;       /* Prevent text wrapping */
+  max-height: 400px;         /* Limit height to prevent overflow */
+  padding-right: 1rem;       /* Add padding to the right for scrollbar */
+  scrollbar-width: thin;      /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+.task-list li {
+  width: 100%;
+  text-align: left;           /* Align text left inside each task */
+  margin-bottom: 0.75rem;
+}
+.task-select {
+  background-color: #83adb5;
+  color: #5e3c58;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  margin: 8px 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  box-sizing: border-box;     /* Ensure padding does not affect width */
+}
